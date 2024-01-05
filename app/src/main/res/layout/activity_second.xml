@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:text="Not everyone knows how to make a Privacy Policy agreement, especially with CCPA or GDPR or CalOPPA or PIPEDA or Australia's Privacy Act provisions. If you are not a lawyer or someone who is familiar to Privacy Policies, you will be clueless. Some people might even take advantage of you because of this. Some people may even extort money from you. These are some examples that we want to stop from happening to you.
+
+We will help you protect yourself by generating a Privacy Policy."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkboxID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I agree to the terms and condition"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnSubmitID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="SubmitForm"
+        android:text="SUBMIT"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkboxID"
+        app:layout_constraintStart_toStartOf="@+id/checkboxID"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxID" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
