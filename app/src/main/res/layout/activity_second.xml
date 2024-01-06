@@ -35,12 +35,14 @@ We will help you protect yourself by generating a Privacy Policy."
         android:id="@+id/btnSubmitID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="1dp"
         android:onClick="SubmitForm"
         android:text="SUBMIT"
         app:layout_constraintEnd_toEndOf="@+id/checkboxID"
-        app:layout_constraintHorizontal_bias="0.182"
-        app:layout_constraintStart_toStartOf="@+id/checkboxID"
+        app:layout_constraintEnd_toStartOf="@+id/btnThirdActivityId"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkboxID" />
 
     <TextView
@@ -65,26 +67,37 @@ We will help you protect yourself by generating a Privacy Policy."
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male"
             android:id="@+id/maleRadioId"
-            />
-
-        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female"
-            android:id="@+id/femaleRadioId"/>
+            android:text="Male" />
 
         <RadioButton
+            android:id="@+id/femaleRadioId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Other"
-            android:id="@+id/otherRadioId"/>
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/otherRadioId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
 
 
     </RadioGroup>
+
+    <Button
+        android:id="@+id/btnThirdActivityId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="336dp"
+        android:onClick="ThirdPage"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxID" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

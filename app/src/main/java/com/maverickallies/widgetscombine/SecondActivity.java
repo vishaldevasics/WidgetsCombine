@@ -50,4 +50,10 @@ public class SecondActivity extends AppCompatActivity {
             Toast.makeText(this, "Please agree to our terms and condition to submit the form.", Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void ThirdPage(View view){
+        Intent intent = new Intent(this,ThirdActivity.class);
+        startActivity(intent);
+    }
+
 }

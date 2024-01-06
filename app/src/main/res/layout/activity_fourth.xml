@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthActivity">
+
+    <TextView
+        android:id="@+id/titleTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Please select your country."
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/basicSpinnerId"
+        android:layout_width="117dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:background="#1BC8A5"
+        app:layout_constraintEnd_toEndOf="@+id/titleTextViewId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleTextViewId"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextViewId" />
+
+
+    <TextView
+        android:id="@+id/countryTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basicSpinnerId" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Please rate my app out of 5."
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/basicRatingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RatingBar
+        android:id="@+id/basicRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        app:layout_constraintEnd_toEndOf="@+id/countryTextViewId"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/countryTextViewId"
+        app:layout_constraintTop_toBottomOf="@+id/countryTextViewId" />
+
+    <TextView
+        android:id="@+id/ratingTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="You have rated _ out of 5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/basicRatingBar"
+        app:layout_constraintStart_toStartOf="@+id/basicRatingBar"
+        app:layout_constraintTop_toBottomOf="@+id/basicRatingBar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
