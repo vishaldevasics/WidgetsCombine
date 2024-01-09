@@ -2,11 +2,13 @@ package com.maverickallies.widgetscombine;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Rating;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -16,6 +18,7 @@ public class FourthActivity extends AppCompatActivity {
     TextView textView,ratingTextView ;
     Spinner spinner;
     RatingBar ratingBar;
+    Button btnNext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +28,7 @@ public class FourthActivity extends AppCompatActivity {
         textView = (TextView)findViewById(R.id.countryTextViewId);
         ratingTextView = (TextView)findViewById(R.id.ratingTextViewId);
         ratingBar = (RatingBar)findViewById(R.id.basicRatingBar);
+        btnNext = (Button)findViewById(R.id.btnFifthActivityId);
 
 
         String[] countryName = {"India","America","Russia","Australia","Burma","Spain","Italy"};
@@ -51,7 +55,11 @@ public class FourthActivity extends AppCompatActivity {
                 Toast.makeText(FourthActivity.this, "Thanks for your valuable feedback.", Toast.LENGTH_SHORT).show();
             }
         });
-
-
     }
+    public void FivthPage(View view){
+        Intent intent = new Intent(this,FivthActivity.class);
+        startActivity(intent);
+    }
+
+
 }

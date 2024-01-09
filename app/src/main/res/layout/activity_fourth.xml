@@ -75,5 +75,19 @@
         app:layout_constraintStart_toStartOf="@+id/basicRatingBar"
         app:layout_constraintTop_toBottomOf="@+id/basicRatingBar" />
 
+    <Button
+        android:id="@+id/btnFifthActivityId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="83dp"
+        android:onClick="FivthPage"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ratingTextViewId" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
